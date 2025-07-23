@@ -1,0 +1,49 @@
+/* Font Styles */
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* Shared Styles */
+.primary-bg{
+    background-color: #F5F8FF;
+}
+.primary-text{
+    color: #252432;
+}
+.secondary-text{
+    color: #8987A1;
+}
+.bold-text{
+    font-weight: 700;
+}
+/* header Styles */
+/* nav Styles */
+nav{
+    display: flex;
+    margin: 30px 150px 120px 150px;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+}
+nav ul{
+    display: flex;
+    font-size: 1rem;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 48px;
+}
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    header{
+        display: none;
+    }
+}
