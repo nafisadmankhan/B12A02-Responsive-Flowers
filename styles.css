@@ -63,7 +63,7 @@ body{
     font-weight: 700;
     z-index: 10;
     white-space: nowrap;
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 /* header Styles */
 /* nav Styles */
@@ -72,7 +72,7 @@ nav{
     margin: 30px 0 120px 0;
     justify-content: space-between;
     align-items: center;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 nav ul{
     display: flex;
@@ -84,7 +84,7 @@ nav ul li{
 }
 /* banner Styles */
 .banner{
-    border: solid 1px black;
+    /* border: solid 1px black; */
     display: flex;
     align-items: end;
 }
@@ -252,7 +252,7 @@ trusted-seller styles
     display: block;
     width: 100vw; 
     margin-left: calc(50% - 50vw); 
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 .join-section > img{
     width: 100%;
@@ -265,9 +265,9 @@ trusted-seller styles
 }
 #join-section-subscribe{
     display: flex;
-    gap: 0;
+    gap: 0px;
     margin-top: 23px;
-    margin-right: 305px;
+    margin-right: 30px;
     margin-left: 305px;
 }
 #subscribe-btn{
@@ -285,7 +285,8 @@ footer{
     gap: 110px;
 }
 footer > .logo > div {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
 }
 footer > .gray-texts{
     display: flex;
@@ -300,7 +301,7 @@ footer ul li{
 .anchors{
     display: flex;
     gap: 24px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     align-items: top;
 }
 .anchors > img{
@@ -344,7 +345,7 @@ footer ul li{
     }
     /* banner Styles */
     .banner{
-        border: solid 1px black;
+        /* border: solid 1px black; */
         display: flex;
         flex-direction: column-reverse;
         align-items: end;
@@ -359,7 +360,7 @@ footer ul li{
     }
     /* plant Styles */
     .plants{
-        /* width: 50%; */
+        margin-bottom: 140px;
     }
     .plant-content{
         padding: 0;
@@ -425,12 +426,17 @@ footer ul li{
     .latest-deal{
         gap: 50px;
     }
+    .latest-deal-title{
+        margin-top: 80px;
+    }
     /* Join Section Styles */
     .join-section{
+        margin-top: 45px;
         height: 100vw;
     }
     #join-section-title{
-        border: solid 2px red;
+        margin-top: 50px;
+        margin-bottom: 23px;
     }
     #subscribe-btn{
         padding: 11px 6px 11px 6px;
@@ -450,5 +456,4 @@ footer ul li{
         flex-direction: column;
         gap: 0;
     }
-    
 }
