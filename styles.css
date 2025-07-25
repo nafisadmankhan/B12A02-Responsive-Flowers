@@ -277,6 +277,41 @@ trusted-seller styles
 #join-section-email{
     padding: 15px 540px 15px 20px;
 }
+/* Footer Section */
+footer{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 110px;
+}
+footer > .logo > div {
+    width: 360px;
+}
+footer > .gray-texts{
+    display: flex;
+}
+footer ul{
+    padding: 0;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 32px;
+}
+.anchors{
+    display: flex;
+    gap: 24px;
+    border: solid 1px red;
+    align-items: top;
+}
+.anchors > img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+/* Debug */
+.debug{
+    border: solid 2px red;
+}
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
     /* Shared Styles */
@@ -410,4 +445,10 @@ trusted-seller styles
     .centered-elm{
         max-width: 100%
     }
+    /* Footer Styles */
+    footer{
+        flex-direction: column;
+        gap: 0;
+    }
+    
 }
