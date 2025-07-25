@@ -15,6 +15,7 @@
 body{
     max-width: 1140px;
     margin: auto;
+    /* overflow-x: hidden; */
 }
 .primary-bg{
     background-color: #F5F8FF;
@@ -41,6 +42,28 @@ body{
 .section-description{
     font-size: 1.375rem;
     color: rgba(0, 0, 0, 0.5);
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    height: 50px;
+    font-size: 1rem;
+    border: none;
+    font-weight: 600;
+}
+.centered-text{
+    text-align: center;
+}
+.centered-elm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    z-index: 10;
+    white-space: nowrap;
+    border: solid 2px red;
 }
 /* header Styles */
 /* nav Styles */
@@ -214,12 +237,45 @@ trusted-seller styles
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -51%);
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.4);
-    height: 98%;
+    height: 99%;
     width: 100%;
     /* top: -50px; */
     border-radius: 22px;
+}
+
+/* Join Section Styles */
+.join-section{
+    margin-top: 120px;
+    position: relative;
+    display: block;
+    width: 100vw; 
+    margin-left: calc(50% - 50vw); 
+    border: solid 2px red;
+}
+.join-section > img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+#join-section-title{
+    color: white;
+}
+#join-section-subscribe{
+    display: flex;
+    gap: 0;
+    margin-top: 23px;
+    margin-right: 305px;
+    margin-left: 305px;
+}
+#subscribe-btn{
+    padding: 20px 54px 20px 54px;
+    height: 100%;
+}
+#join-section-email{
+    padding: 15px 540px 15px 20px;
 }
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
@@ -268,7 +324,7 @@ trusted-seller styles
     }
     /* plant Styles */
     .plants{
-    /* width: 50%; */
+        /* width: 50%; */
     }
     .plant-content{
         padding: 0;
@@ -333,5 +389,25 @@ trusted-seller styles
     }
     .latest-deal{
         gap: 50px;
+    }
+    /* Join Section Styles */
+    .join-section{
+        height: 100vw;
+    }
+    #join-section-title{
+        border: solid 2px red;
+    }
+    #subscribe-btn{
+        padding: 11px 6px 11px 6px;
+        height: 100%;
+    }
+    #join-section-subscribe{
+        max-width: 100%;
+    }
+    #join-section-email{
+        padding: 10px 50px 10px 20px;
+    }
+    .centered-elm{
+        max-width: 100%
     }
 }
