@@ -160,6 +160,8 @@ trusted-seller styles
 }
 .latest-deal-double > div > img{
     border-radius: 14px;
+    width: 100%;
+    height: 100%;
 }
 .latest-deal-double > div{
     position: relative;
@@ -176,6 +178,10 @@ trusted-seller styles
     border-radius: 22px;
     /* opacity: 0.4; */
 }
+/* .latest-deal-double-text,
+.latest-deal-single-text{
+    white-space: nowrap;
+} */
 .latest-deal-double-text{
     position: absolute;
     top: 50%;
@@ -194,6 +200,7 @@ trusted-seller styles
     font-size: 2.5rem;
     font-weight: 700;
     z-index: 10;
+    white-space: nowrap;
 }
 #shop-now-sm{
     font-weight: 600;
@@ -304,5 +311,27 @@ trusted-seller styles
     .trusted-seller-pictures-badge{
         display: none;
     }
-
+    /* Latest Deal Section */
+    .latest-deal-description{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .latest-deal-pictures{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    .latest-deal-single > img{
+        width: 100%;
+        height: 100%;
+    }
+    .latest-deal-single-text{
+        font-size: 1.25rem;
+    }
+    #shop-now-lg{
+        font-size: 1rem;
+    }
+    .latest-deal{
+        gap: 50px;
+    }
 }
